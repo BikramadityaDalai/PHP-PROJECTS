@@ -1,5 +1,5 @@
 # mywork-space
-# //it find a non-empty contiguous subarray with the largest sum
+
 function contigiousSequence(n, arr) {
     let sum=0;
     let max=-Infinity;
