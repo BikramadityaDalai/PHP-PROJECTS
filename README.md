@@ -1,4 +1,4 @@
-# mywork-space
+# Mywork-space
 //1=> it find a non-empty contiguous subarray with the largest sum
 function contigiousSequence(n, arr) {
     let sum=0;
@@ -27,6 +27,21 @@ function equalPartition(n, arr) {
         }
     }
     return -1;
+}
+
+//3=>it find if there is any subarray with 0 sum.
+function subarraySumZero(n, arr) {
+  let res=new Set();
+  let sum=0;
+  for(let i=0;i<n;i++){
+    sum+=arr[i];
+    if(sum===0 || res.has(sum)){
+      return 'Yes';
+    }
+    res.add(sum);
+
+  }
+  return 'No';
 }
 
 Author:BIKRAMADITYA DALAI
